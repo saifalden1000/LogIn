@@ -54,7 +54,7 @@ signIn.addEventListener("click", function () {
     if (loginEmail.value == usersList[i].email) {
       testuser = usersList[i].name;
       if (loginPassword.value == usersList[i].password) {
-        window.location.assign("../html/login.html");
+        window.location.href = "./login.html";
         sessionStorage.setItem("loggedUser", JSON.stringify(testuser));
       } else {
         document.getElementById("wrongpassword").classList.remove("d-none");
